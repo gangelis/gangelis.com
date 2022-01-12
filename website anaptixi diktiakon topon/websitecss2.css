@@ -1,0 +1,618 @@
+ /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#myVideo2 {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+/* Add some content at the bottom of the video/page */
+.socialbuttons {
+  position: fixed;
+  bottom: 0;
+  left: 3px;
+  color: #f1f1f1;
+  width: 11%;
+  padding: 0px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 12px;
+  font-size: 1px;
+  width: 11px;
+  height:10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: purple;
+  color: white;
+}
+
+.fa-500px {
+	background:grey;
+	color:white;
+}
+
+#home-image:hover {
+	
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.75rem white);
+}
+
+#back-button:hover {
+   cursor:pointer;
+   filter: drop-shadow(0 0 0.75rem white);
+}
+
+#item-image:hover {
+	
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.75rem white);
+	
+}
+
+
+
+#div-image {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  padding: 0px;
+  margin : 0px;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  position: fixed;
+  background-color: rgba(140, 140, 140, 0.4);
+  overflow: hidden;
+  font-family: Palatino Linotype;
+  filter: drop-shadow(0 0 0.75rem white);
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+
+
+#subs-div {
+	position:absolute;
+	border-radius:15px;
+	height:305px;
+	width:240px;
+	top:27%;
+	left:6%;
+	background-color:rgba(140, 140, 140, 0.4); 
+	font-family: Palatino Linotype;
+	font-size:21px;
+	font-weight:bold;
+	text-align: center;
+	text-shadow:0.5px 0.5px 1px white;
+	color:white;
+	
+	
+	
+}
+#subs-div {
+  animation: cssAnimation 0s 3s forwards;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+@keyframes cssAnimation {
+  to   { opacity: 1; }
+}
+
+
+#close {
+	border-radius: 2px;
+    float:right;
+    display:inline-block;
+    padding:1px 5px;
+    background:#ccc;
+}
+
+#close:hover {
+    float:right;
+    display:inline-block;
+    padding:1px 5px;
+    background:#ccc;
+    color:#fff;
+	cursor: pointer;
+}
+
+.animate-in {
+	background-color: black;
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+	background-color: black;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.header-container {
+	position: fixed;
+	left: 42%;
+	font-family: Palatino Linotype;
+	font-size : 40px;
+	text-align: center;
+	text-shadow: 2px 2px 5px black;
+	color: rgb(228,228,228);
+	font-weight: bold;
+	
+}
+
+h3 {
+	position: fixed;
+	left: 42%;
+	font-family: Palatino Linotype;
+	font-size : 40px;
+	text-align: center;
+	text-shadow: 2px 2px 5px black;
+	color: rgb(228,228,228);
+	font-weight: bold;
+}
+
+label {
+	font-family: Palatino Linotype;
+	text-shadow: 2px 2px 5px rgba(140, 140, 140, 1);
+	font-weight: bold;
+	color: black;
+	
+}
+
+input[type=text], select, textarea {
+  font-family: Palatino Linotype;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  font-family: Palatino Linotype;
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(140, 140, 140, 1.0);
+}
+
+.contact-container {
+  width: 50vw;
+  height: 50vh;
+  position: fixed;
+  top: 22%;
+  left: 24%;
+  border-radius: 0px;
+  padding: 0px;
+}
+
+
+
+#gallery-container-1 {
+  width: 78vw;
+  height: 100vh;
+  position: fixed;
+  top: 30%;
+  left: 11%;
+  border-radius: 2px;
+  padding: 0px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+
+
+
+#gallery-container-2 {
+  width: 78vw;
+  height: 100vh;
+  position: fixed;
+  top: 30%;
+  left: 11%;
+  border-radius: 2px;
+  padding: 0px;
+  overflow: auto;
+  box-sizing: border-box;
+  display: none;
+}
+
+
+
+
+#gallery-container-3 {
+  width: 78vw;
+  height: 100vh;
+  position: fixed;
+  top: 30%;
+  left: 11%;
+  border-radius: 2px;
+  padding: 0px;
+  overflow: auto;
+  box-sizing: border-box;
+  display: none;
+}
+
+
+
+
+#photo-set-buttons-div {
+  position: fixed;
+  width: 20%;
+  height : 20%;
+  top: 1%;
+  left: 38%;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+
+
+#photosetbutton:hover {
+	cursor:pointer;
+	filter: drop-shadow(0 0 0.75rem black);
+}
+
+#header {
+  text-align: center;
+  position: fixed;
+  width: 20%;
+  height : 20%;
+  top: 0%;
+  left: 38%;
+  padding: 0px;
+  box-sizing: border-box;
+    
+}
+
+
+
+h1 {
+	font-family: Palatino Linotype;
+	color: black;
+	text-shadow: 2px 2px 5px black;
+	font-size: 50px;
+	
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.video-container {
+	position: absolute;
+	width: 70vw;
+	height: 95vh;
+	padding: 0px;
+	top: 4%;
+	left:15%;
+
+}
+
+
+
+
+.bottom-row {
+	position: absolute;
+	width: 70vw;
+	height: 23vh;
+	padding: 0px;
+	bottom:1%;
+	left: 0%;
+	display: block;
+}
+
+.bottom-col1 {
+	position: absolute;
+	width:19.5vw;
+	height:23vh;
+	padding: 0px;
+	bottom:1%;
+	left: 0%;
+	display: block;
+}
+
+.bottom-col2 {
+	position: absolute;
+	width:19.5vw;
+	height:23vh;
+	padding: 0px;
+	bottom:1%;
+	left: 24%;
+	display: block;
+}
+
+.bottom-col3 {
+	position: absolute;
+	width:19.5vw;
+	height:23vh;
+	padding: 0px;
+	bottom:1%;
+	left: 48%;
+	display: block;
+}
+
+
+.bottom-col4 {
+	position: absolute;
+	width:19.5vw;
+	height:23vh;
+	padding: 0px;
+	bottom:1%;
+	left: 72%;
+	display: block;
+}
+
+
+#video-frame {
+	position: fixed;
+	width:45vw;
+	height: 55vh;
+	left: 28%;
+	top: 18%;
+}
+
+#video-thumb-1 {
+	width: inherit;
+	height: inherit;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom:0%;
+}
+
+#video-thumb-1:hover {
+	cursor: pointer;
+}
+
+#video-thumb-2 {
+	width: inherit;
+	height: inherit;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom:0%;
+}
+
+#video-thumb-2:hover {
+	cursor: pointer;
+}
+
+#video-thumb-3 {
+	width: inherit;
+	height: inherit;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom:0%;
+}
+
+#video-thumb-3:hover {
+	cursor: pointer;
+}
+
+#video-thumb-4 {
+	width: inherit;
+	height: inherit;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom:0%;
+}
+
+#video-thumb-4:hover {
+	cursor: pointer;
+}
+
+.merch-bench {
+	position: absolute;
+	width: 75vw;
+	height: 95vh;
+	padding: 0px;
+	top: 4%;
+	left:12.5%;
+}
+	
+
+
+.merch-side {
+	position: fixed;
+	width: 75vw;
+	height: 50vh;
+	padding: 0px;
+	top: 20%;
+	left:12.5%;
+		
+}
+
+#header-merch {
+  text-align: center;
+  position: fixed;
+  width: 20%;
+  height : 20%;
+  top: 0%;
+  left: 38%;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.merch1 {
+	position: fixed;
+	width: 25vw;
+	height: 50vh;
+	padding: 0px;
+	top: 20%;
+	left:12.5%;
+	
+}
+
+.merch2 {
+	position: fixed;
+	width: 25vw;
+	height: 50vh;
+	padding: 0px;
+	top: 20%;
+	left:37.5%;
+	
+}
+
+.merch3 {
+	position: fixed;
+	width: 25vw;
+	height: 50vh;
+	padding: 0px;
+	top: 20%;
+	left:62.5%;
+	
+}
+
+.order-now {
+	position: fixed;
+	width: 30vw;
+	height: 20vh;
+	padding: 0px;
+	bottom: 6%;
+	left:35%;
+	background-color: purple;
+	animation-name: example;
+	animation-duration: 15s;		
+	animation-iteration-count: 15;
+	filter: drop-shadow(0 0 0.75rem black);
+}
+
+@keyframes example {
+  0%   {background-color:red;}
+  20%  {background-color:green;}
+  40%  {background-color:blue;}
+  60%  {background-color:cyan;}
+  80%  {background-color:magenta;}
+  100% {background-color:yellow;}
+}
+
+.order-now:hover {
+	cursor:pointer;
+
+}
